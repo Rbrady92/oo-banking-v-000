@@ -1,6 +1,8 @@
 class Transfer
   attr_accessor :sender, :receiver, :status, :amount
 
+  @last_transfer_sent = 0
+
   def initialize(sender, receiver, amount)
     @sender = sender
     @receiver = receiver
@@ -21,3 +23,5 @@ class Transfer
   end
 
 end
+
+#for only happen once test, maybe make a check for if status == complete return reject message
