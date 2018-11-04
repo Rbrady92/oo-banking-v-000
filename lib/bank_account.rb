@@ -19,7 +19,7 @@ class BankAccount
   def close_account
     @status = "closed"
   end
-  
+
   private
 
   attr_writer :name
