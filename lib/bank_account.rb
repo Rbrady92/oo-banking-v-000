@@ -9,7 +9,7 @@ class BankAccount
   end
 
   def display_balance
-    @balance
+    "Your balance is $#{@balance}."
   end
 
   def valid?
@@ -19,6 +19,7 @@ class BankAccount
   def close_account
     @status = "closed"
   end
+  
   private
 
   attr_writer :name
