@@ -2,6 +2,8 @@ class BankAccount
   attr_accessor :balance, :status
   attr_reader :name
 
+  @last_transfer_rec = 0
+  
   def initialize(name)
     @name = name
     @balance = 1000
