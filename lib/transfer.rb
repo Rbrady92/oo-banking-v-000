@@ -13,7 +13,7 @@ class Transfer
   end
 
   def execute_transaction
-    if !self.valid?; "rejected" end
+    if !Transfer.valid?; "rejected" end
   end
 
 end
