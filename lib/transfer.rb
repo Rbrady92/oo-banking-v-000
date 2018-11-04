@@ -13,7 +13,11 @@ class Transfer
   end
 
   def execute_transaction
-    if valid? == false; "rejected" end
+    if !valid?; "rejected" end
+  end
+
+  def reverse_transfer
+
   end
 
 end
